@@ -1,0 +1,4 @@
+   0.157838893s  INFO prepare_target{force=false package_id=os v0.1.0 (/home/shenfs/ch3-context2026-5-30/os) target="os"}: cargo::core::compiler::fingerprint: fingerprint dirty for os v0.1.0 (/home/shenfs/ch3-context2026-5-30/os)/Check { test: true }/TargetInner { name: "os", doc: true, ..: with_path("/home/shenfs/ch3-context2026-5-30/os/src/main.rs", Edition2021) }
+   0.157892489s  INFO prepare_target{force=false package_id=os v0.1.0 (/home/shenfs/ch3-context2026-5-30/os) target="os"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(Stale)
+    Checking os v0.1.0 (/home/shenfs/ch3-context2026-5-30/os)
+error: could not compile `os` (bin "os" test) due to 2 previous errors; 7 warnings emitted

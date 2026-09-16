@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "rCore Debug",
+            "type": "lldb",
+            "request": "custom",
+            "targetCreateCommands": [
+                "file target/riscv64gc-unknown-none-elf/release/os",
+                "gdb-remote localhost:1234"
+            ],
+            "processCreateCommands": [
+                "settings set target.default-arch riscv64"
+            ]
+        }
+    ]
+}

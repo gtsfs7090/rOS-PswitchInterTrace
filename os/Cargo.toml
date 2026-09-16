@@ -1,0 +1,28 @@
+[package]
+name = "os"
+version = "0.1.0"
+authors = ["Yifan Wu <shinbokuow@163.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+riscv = { git = "https://github.com/rcore-os/riscv", features = ["inline-asm"] }
+lazy_static = { version = "1.4.0", features = ["spin_no_std"] }
+log = "0.4"
+sbi-rt = { version = "0.0.2", features = ["legacy"] }
+
+spin = "0.9.8"  # 添加这一行  //新增代码行
+
+buddy_system_allocator = "0.9"
+# 或者
+# linked_list_allocator = "0.10"
+
+[profile.release]
+debug = true
+
+[features]
+default = ["board_qemu"]
+board_qemu = []
+[profile.dev]
+panic = "abort" # 避免panic时展开，简化调试过程
