@@ -14,6 +14,7 @@ Docker
 git clone https://github.com/gtsfs7090/rOS-PswitchInterTrace.git
 
 cd rOS-PswitchInterTrace
+
 3. Build Dockerfile to generate the image ros-pswitchintertrace:1.0.0. Command: <br>
 docker build -t ros-pswitchintertrace:1.0.0 .
 4. Execute the ros-pswitchintertrace:1.0.0 image. Command: <br>
